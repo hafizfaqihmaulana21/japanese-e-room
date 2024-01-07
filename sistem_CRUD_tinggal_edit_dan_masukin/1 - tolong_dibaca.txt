@@ -1,0 +1,10 @@
+sorry cuy urang gatau Struktur Navigasi nya gimana jadi gatau ini CRUD mau dipasang di page mana
+
+alurnya:	edit dulu .env nya, DB_DATABASE nya sesuai in sama judul database kita
+
+		Database (tinggal diedit) ---diurus sama---> Controller (tinggal sesuaiin sama database) ---disambungin pake---> 
+		Route (tinggal diedit rute nama page nya) ---ditampilkan dengan---> Views (tinggal dihias pake layout CSS)
+
+Cuma ada 5 komponen yang diedit dan dimasukkin:		file sql, .env, PegawaiController.php (file controller), web.php (file route), 
+							dan index.blade.php (edit.blade.php dan tambah.blade.php mah tinggal ganti
+							variabelnya)

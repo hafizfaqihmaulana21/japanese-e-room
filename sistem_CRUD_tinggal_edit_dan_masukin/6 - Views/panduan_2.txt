@@ -1,0 +1,2 @@
+sama itu file edit.blade.php (Update dalam CRUD), sama tambah.blade.php (Create dalam CRUD) (Read dan Delete ada di index.blade.php)
+sama kedua file itu juga variabelnya diubah, disesuaiin sama database dan file Controller, file Route
