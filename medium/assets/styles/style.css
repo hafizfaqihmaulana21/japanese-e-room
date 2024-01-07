@@ -49,6 +49,14 @@ body{
     padding-left: 30rem;
 }
 
+body.dark{
+    --white: #222;
+    --black: #fff;
+    --light-color: #aaa;
+    --light-bg: #333;
+    --border:.1rem solid rgba(255, 255, 255, .2);
+}
+
 body.active{
     padding-left: 0;
 }
@@ -116,6 +124,15 @@ section{
 .flex-btn{
     display: flex;
     gap: 1rem;
+}
+
+.heading{
+    padding-bottom: 1.8rem;
+    border-bottom:var(--border);
+    font-size: 2.5rem;
+    color: var(--black);
+    text-transform: capitalize;
+    margin-bottom: 2rem;
 }
 
 .header{
@@ -310,6 +327,318 @@ section{
 
 }
 
+.quick-select .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27.5rem, 1fr));
+    gap: 1.5rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.quick-select .box-container .box{
+    border-radius: .5rem;
+    background-color: var(--white);
+    padding: 2rem;
+}
+
+.quick-select .box-container .box .title{
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.quick-select .box-container .box p{
+    line-height: 1.5;
+    padding-top: 1rem;
+    color: var(--light-color);
+    font-size: 1.7rem;
+}
+
+.quick-select .box-container .box p span{
+    color: var(--main-color);
+}
+
+.quick-select .box-container .tutor{
+    text-align: center;
+}
+
+.quick-select .box-container .tutor p{
+    padding-bottom: 1rem;
+}
+
+.quick-select .box-container .box .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 2rem;
+}
+
+.quick-select .box-container .box .flex a{
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    font-size: 1.6rem;
+    background-color: var(--light-bg);
+}
+
+.quick-select .box-container .box .flex a i{
+    margin-right: 1rem;
+    color: var(--black);
+}
+
+.quick-select .box-container .box .flex a span{
+    color: var(--light-color);
+}
+
+.quick-select .box-container .box .flex a:hover{
+    background-color: var(--black);
+}
+
+.quick-select .box-container .box .flex a:hover i{
+    color: var(--white);
+}
+
+.quick-select .box-container .box .flex a:hover span{
+    color: var(--white);
+}
+
+.courses .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.courses .box-container .box{
+    border-radius: .5rem;
+    background-color: var(--white);
+    padding: 2rem;
+}
+
+.courses .box-container .box .tutor{
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.courses .box-container .box img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.courses .box-container .box h3{
+    font-size: 2rem;
+    color: var(--black);
+    margin-bottom: .2rem;
+}
+
+.courses .box-container .box .tutor span{
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+
+.courses .box-container .box .thumb{
+    width: 100%;
+    border-radius: .5rem;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.courses .box-container .box .title{
+    font-size: 2rem;
+    color: var(--black);
+    margin-top: .5rem;
+    padding: .5rem 0;
+}
+
+.courses .more-btn{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.playlist .row{
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+    background-color: var(--white);
+}
+
+
+.playlist .row .col{
+    flex: 1 1 40rem;
+}
+
+.playlist .row .col .save-list button{
+    font-size: 2rem;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    padding: 1rem 3rem;
+    cursor:pointer;
+    margin-bottom: 2rem;
+}
+
+.playlist .row .col .save-list button i{
+    color: var(--black);
+    margin-right: 1rem;
+}
+
+.playlist .row .col .save-list button span{
+    color: var(--light-color);
+}
+
+.playlist .row .col .save-list button:hover{
+    background-color: var(--black);
+}
+
+.playlist .row .col .save-list button:hover i{
+    color: var(--white);
+}
+
+.playlist .row .col .save-list button:hover span{
+    color: var(--white);
+}
+
+.playlist .row .col .thumb{
+    position: relative;
+    height: 30rem;
+}
+
+.playlist .row .col .thumb span{
+    position: absolute;
+    top: 1rem; left: 1rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    font-size: 2rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.playlist .row .col .thumb img{
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.playlist .row .col .tutor{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.playlist .row .col .tutor img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.playlist .row .col .tutor h3{
+    font-size: 2rem;
+    color: var(--black);
+    margin-bottom: 2rem;
+}
+
+.playlist .row .col .tutor span{
+    color: var(--main-color);
+    font-size: 1.5rem;
+}
+
+.playlist .row .col .details {
+    padding-top: 2rem;
+}
+
+.playlist .row .col .details h3{
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.playlist .row .col .details p{
+    padding: 1rem 0;
+    line-height: 2;
+    color: var(--light-color);
+    font-size: 1.7rem;
+}
+
+.playlist .row .col .details .date{
+    font-size: 1.7rem;
+    padding-top: .5rem;
+}
+
+.playlist .row .col .details .date i{
+    color: var(--main-color);
+    margin-right: 1rem;
+}
+
+.playlist .row .col .details .date span{
+    color: var(--light-color);
+}
+
+.videos-container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.videos-container .box-container .box{
+    position: relative;
+    border-radius: .5rem;
+    padding: 2rem;
+    background-color: var(--white);
+}
+
+.videos-container .box-container .box img{
+    height: 20rem;
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .footer{
     position: sticky;
     bottom: 0; right: 0; left: 0;
@@ -321,6 +650,10 @@ section{
     font-size: 2rem;
     margin-top: 2rem;
     z-index: 1000;
+}
+
+.footer span{
+    color: var(--main-color);
 }
 
 @media (max-width:1200px){
@@ -380,5 +713,13 @@ section{
         font-size: 50%;
     }
 
+    .header{
+        font-size: 2rem;
+    }
+
+    .flex-btn{
+        flex-flow: column;
+        gap: 0;
+    }
 }
 
