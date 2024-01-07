@@ -1,53 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jelingo - Register</title>
-        <link rel="stylesheet" href="assets/styles/style-register.css">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <title>Jelingo - Home</title>
+        <link rel="icon" href="assets/images/jplogo.ico.png" type="image/x-icon">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+        <link rel="stylesheet" href="assets/styles/style.css">
     </head>
-
     <body>
-        <div class="wrapper">
-            <form action="">
-                <h1>Registration</h1>
-                <div class="input-box">
-                    <div class="input-field">
-                        <input type="text" placeholder="Fullname" required>
-                        <i class='bx bxs-user'></i>
-                    </div>
-                    <div class="input-field">
-                        <input type="text" placeholder="Username" required>
-                        <i class='bx bxs-user'></i>
-                    </div>
-                </div>
-                <div class="input-box">
-                    <div class="input-field">
-                        <input type="email" placeholder="Email" required>
-                        <i class='bx bxs-envelope'></i>
-                    </div>
-                    <div class="input-field">
-                        <input type="number" placeholder="Phone Number" required>
-                        <i class='bx bxs-phone' ></i>
-                    </div>
-                </div>
-                <div class="input-box">
-                    <div class="input-field">
-                        <input type="password" placeholder="Password" required>
-                        <i class='bx bxs-lock-alt' ></i>
-                    </div>
-                    <div class="input-field">
-                        <input type="password" placeholder="Confirm Password" required>
-                        <i class='bx bxs-lock-alt' ></i>
-                    </div>
-                </div>
-                <label><input type="checkbox">I hereby declare that the above information provided is true and correct</label>
+        <header class="header">
+            <section class="flex">
 
-                <button type="submit" class="btn">Register</button>
-            </form>
-        </div>    
+                <a href="home.html" class="logo">Jelingo</a>
+
+                <form action="" method="post" class="search-form">
+                    <input type="text" name="seacrh_box" placeholder="Search courses" required maxlength="100">
+                    <button type="submit" class="fas fa-search"></button>
+                </form>
+
+                <div class="icons">
+                    <div id="menu-btn" class="fas fa-bars"></div>
+                    <div id="search-btn" class="fas fa-search"></div>
+                    <div id="user-btn" class="fas fa-user"></div>
+                    <div id="toggle-btn" class="fas fa-sun"></div>
+                </div>
+
+                <div class="profile">
+                    <img src="assets/images/yoshikagekira.jpg" alt="profilepic">
+                    <h3>KIRA YOSHIKAGE</h3>
+                    <span>STUDENT</span>
+                    <a href="profile.html" class="btn"> View profile</a>
+                    <div class="flex-btn">
+                        <a href="login.html" class="option-btn">Login</a>
+                        <a href="register.html" class="option-btn">Register</a>
+                    </div>
+
+                </div>
+            </section>
+        </header>
+
+        <div class="side-bar">
+            <div class="close-side-bar">
+                <i class="fas fa-times"></i>
+            </div>
+
+            <div class="profile">
+                <img src="assets/images/yoshikagekira.jpg" alt="profilepic">
+                <h3>KIRA YOSHIKAGE</h3>
+                <span>STUDENT</span>
+                <a href="profile.html" class="btn"> View profile</a>
+            </div>
+
+            <nav class="navbar">
+                <a href="home.html"><i class="fas fa-home"></i><span>HOME</span></a>
+                <a href="about.html"><i class="fas fa-question"></i><span>ABOUT US</span></a>
+                <a href="course.html"><i class="fas fa-graduation-cap"></i><span>COURSES</span></a>
+                <a href="teacher.html"><i class="fas fa-chalkboard-user"></i><span>TEACHERS</span></a>
+                <a href="contact.html"><i class="fas fa-headset"></i><span>CONTACT US</span></a>
+            </nav>
+        </div>
+
+    <section class="form-container">
+
+    <form action="" method="post" enctype="multipart/form-data">
+        <h3>register now</h3>
+        <p>Fullname<span>*</span></p>
+        <input type="text" name="name" placeholder="" required maxlength="50" class="box">
+        <p>Username<span>*</span></p>
+        <input type="text" name="name" placeholder="" required maxlength="50" class="box">
+        <p>Email <span>*</span></p>
+        <input type="email" name="email" placeholder="" required maxlength="50" class="box">
+        <p>Password <span>*</span></p>
+        <input type="password" name="pass" placeholder="" required maxlength="20" class="box">
+        <p>Confirm password <span>*</span></p>
+        <input type="password" name="c_pass" placeholder="" required maxlength="20" class="box">
+        <p>Select photo profile<span>*</span></p>
+        <input type="file" accept="image/*" required class="box">
+        <input type="submit" value="register new" name="submit" class="btn">
+    </form>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        ALL RIGHTS RESERVED 2024 &copy;<span>The 08th MS Team</span>
+    </footer>
+
+    <script src="script.js"></script>
+
+    
     </body>
 </html>
